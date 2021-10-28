@@ -12,7 +12,6 @@ public class Day04 {
                 numberOfDividers++;
             }
         }
-        ;
         return numberOfDividers;
     }
 
@@ -22,20 +21,13 @@ public class Day04 {
             elements.add(dividerCounter(i));
         }
 
-        for (int i = 1; i < elements.size(); i++) {
+        for (int i = 0; i < elements.size(); i++) {
             if (elements.get(i) % 2 == 0) {
                 elements.set(i, 0);
             } else {
                 elements.set(i, 1);
             }
         }
-
-
-
         return elements;
     }
-
-
-
-
 }
